@@ -1,0 +1,44 @@
+.photo-day {
+  height: 202px;
+  margin-bottom: 5px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: block;
+  text-decoration: none;
+
+  @include fromMedMobile{
+    height: 286px;
+  }
+
+  @include fromVerticalTablet {
+    height: 455px;
+  }
+
+  &__day {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 80px;
+
+    &:after {
+      display: none;
+    }
+
+    @include fromMedMobile{
+      left: 9px;
+      top: 9px;
+    }
+
+    @include fromVerticalTablet {
+      left: 20px;
+      top: 20px;
+      width: 160px;
+      padding: 28px 0 23px;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+}

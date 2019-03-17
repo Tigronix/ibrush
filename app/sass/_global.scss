@@ -32,5 +32,43 @@ ul li {
 }
 
 h1 {
+	@include playfair;
+	font-size: 26px;
+	font-weight: normal;
+	color: #010101;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 13px;
 
+	@include fromMedMobile {
+		font-size: 40px;
+		margin-bottom: 23px;
+	}
+
+	span {
+		display: inline-block;
+		position: relative;
+		background: #fff;
+		padding-right: 6.451612903225806%;
+		z-index: 5;
+
+		@include fromMedMobile{
+			padding-right: 4.4%;
+		};
+
+		@include fromVerticalTablet {
+			padding-right: 2.452%;
+		}
+	}
+
+	&:after {
+		display: block;
+		content: '';
+		height: 2px;
+		background: #000;
+		position: absolute;
+		left: 0;
+		bottom: 7px;
+		right: 0;
+	}
 }
