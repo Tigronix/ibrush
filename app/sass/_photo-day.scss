@@ -1,18 +1,31 @@
 .photo-day {
-  height: 202px;
   margin-bottom: 5px;
-  background-size: cover;
-  background-position: center;
   position: relative;
   display: block;
   text-decoration: none;
 
   @include fromMedMobile{
-    height: 286px;
+    margin-bottom: 10px;
   }
 
   @include fromVerticalTablet {
-    height: 455px;
+    margin-bottom: 16px;
+  }
+
+  &__img-container {
+    height: 202px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include fromMedMobile {
+      height: 286px;
+    }
+
+    @include fromVerticalTablet  {
+      height: 455px;
+      margin-bottom: 14px;
+    }
   }
 
   &__day {
@@ -39,6 +52,30 @@
       &:after {
         display: block;
       }
+    }
+  }
+
+  &__name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 0.4px;
+    margin-bottom: 2px;
+    display: none;
+
+    @include fromVerticalTablet {
+      display: block;   
+    }
+  }
+
+  &__author {
+    font-size: 13px;
+    color: #acacac;
+    letter-spacing: 0.4px;
+    display: none;
+
+    @include fromVerticalTablet {
+      display: block;
     }
   }
 }

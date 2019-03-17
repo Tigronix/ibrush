@@ -1,0 +1,119 @@
+.news {
+  margin-bottom: 20px;
+
+  @include fromVerticalTablet {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    font-size: 0;
+    margin: -3px;
+
+    @include fromMedMobile {
+      margin: -5px;
+    }
+
+    @include fromVerticalTablet {
+      margin: -10px;
+    }
+  }
+
+  &__li {
+    display: inline-block;
+    width: calc(100% / 4);
+    padding: 3px;
+    height: 54px;
+
+    @include fromMedMobile {
+      padding: 5px;
+      width: calc(100% / 5);
+      height: 63px;
+    }
+
+    @include fromVerticalTablet {
+      padding: 10px;
+      width: calc(100% / 4);
+      height: 124px;
+    }
+
+    &--big {
+      float: right;
+      width: 165px;
+      height: 225px;
+      padding: 5px 5px 0 0;
+      margin-left: 15px;
+      margin-bottom: 27px;
+      display: none;
+
+      @include fromMedMobile {
+        display: inline-block;
+      }
+
+      @include fromVerticalTablet {
+        padding: 10px 10px 0 0;
+        width: 170px;
+        height: 230px;
+        margin: 0 0 18px 10px;
+      }
+    }
+
+    &--hide-med-mobile {
+       @include fromMedMobile {
+         display: none;
+       }
+
+       @include fromVerticalTablet {
+         display: inline-block;
+       }
+    }
+
+    &--advertise {
+      width: 100%;
+      height: auto;
+
+      @include fromMedMobile {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__day {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+
+    @include fromVerticalTablet {
+      padding-top: 27px;
+    }
+
+    &:after {
+      right: 7px;
+      top: 16px;
+
+      @include fromVerticalTablet {
+        top: 38px;
+        right: 20px;
+      }
+    }
+
+    @include fromVerticalTablet {
+      .day {
+        &__number {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

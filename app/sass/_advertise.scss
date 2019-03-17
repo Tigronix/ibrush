@@ -1,0 +1,38 @@
+.advertise {
+  margin: 5px 0 3px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+
+  &__img-wrap {
+    width: 100px;
+    height: 100%;
+  }
+
+  &__content {
+    background: #fbf6e8;
+    padding: 4px 0 0 20px;
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 10px;
+    font-weight: bold;
+    color: #bebebe;
+    margin-bottom: 4px;
+  }
+
+  &__name {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  &__desc {
+    font-size: 13px;
+    line-height: 17px;
+    color: #000;
+  }
+}
