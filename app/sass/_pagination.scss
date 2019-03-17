@@ -1,0 +1,68 @@
+.pagination {
+  &__pages {
+    font-size: 13px;
+    line-height: 18px;
+    color: #848484;
+    margin-right: 32px;
+    display: none;
+
+    @include fromMedMobile {
+      display: inline-block;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+   &__list {
+     display: flex;
+     flex-wrap: wrap;
+
+     @include fromMedMobile {
+       margin: -6px;
+     }
+   }
+
+  &__li {
+    @include fromMedMobile {
+      margin: 6px;
+    }
+
+    &.active {
+      .pagination__link {
+        background: #e6e6e6;
+        font-weight: bold;
+      }
+    }
+  }
+
+   &__link {
+     width: 34px;
+     height: 34px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 13px;
+     line-height: 18px;
+     color: #000;
+     transition: background-color .2s;
+     text-decoration: none;
+   }
+
+   &__pages-next {
+     font-size: 13px;
+     line-height: 18px;
+     color: #000;
+     margin-left: 26px;
+     text-decoration: none;
+     display: inline-block;
+
+     @include fromMedMobile {
+       margin-left: 22px;
+     }
+   }
+}
