@@ -27,9 +27,7 @@ gulp.task('sass', function() { // Создаем таск "sass"
 
 gulp.task('scripts', function() {
   return gulp.src([
-      'app/libs/jquery/dist/jquery.min.js',
-      'app/libs/vue/vue.js',
-      'app/libs/air-datepicker/js/datepicker.js',
+      
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
