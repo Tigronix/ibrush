@@ -9,7 +9,7 @@
   }
 
   @include fromVerticalTablet {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   &__img-container {
@@ -59,19 +59,16 @@
     font-size: 13px;
     font-weight: bold;
     color: #000;
-    letter-spacing: 0.4px;
-    margin-bottom: 2px;
     display: none;
 
     @include fromVerticalTablet {
-      display: block;   
+      display: block;
     }
   }
 
   &__author {
     font-size: 13px;
     color: #acacac;
-    letter-spacing: 0.4px;
     display: none;
 
     @include fromVerticalTablet {

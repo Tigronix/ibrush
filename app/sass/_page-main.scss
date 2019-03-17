@@ -1,11 +1,11 @@
 .page-main {
-  padding: 22px 0 0 0;
+  padding: 18px 0 0 0;
 
   @include fromMedMobile {
-    padding-top: 37px;
+    padding-top: 32px;
   }
 
   @include fromVerticalTablet {
-    padding-top: 34px;
+    padding-top: 29px;
   }
 }
